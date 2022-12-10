@@ -3,3 +3,6 @@ export interface userInterface{
     name: string;
     email: string;
 }
+
+
+// interface para receber os dados da API
