@@ -29,9 +29,8 @@ export class UserTableComponent implements OnInit {
     this.toDisplay = !this.toDisplay;
     this.userService.getUser().subscribe(user => this.user = user)
     //metodo para mostrar os usuarios
-  }
-
-  hideUsers(){
 
   }
+
+
 }

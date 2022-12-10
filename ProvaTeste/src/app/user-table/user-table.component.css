@@ -39,6 +39,10 @@
     width: 90%;
 }
 
+.card span{
+    color: #ffffff;
+}
+
 
 ul{
     padding: 0;
