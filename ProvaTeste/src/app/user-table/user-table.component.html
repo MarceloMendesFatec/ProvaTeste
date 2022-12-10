@@ -1,18 +1,24 @@
-<p>user-table works!</p>
+<div class="nav"> Prova Teste </div>
 
 
+<div class="container">
+    <button (click)="showUsers()">
+        Show Users
+    </button>
+
+   <div class="card">
+        <ul *ngFor="let user of user">
+
+            <span>{{user.id}} </span>
+            <span>{{user.name}} </span>
+            <span>{{user.email}} </span>
+            <span>{{user.company.name}} </span>
+
+         </ul>
+   </div>
 
 
-    <ul *ngFor="let user of user">
-
-        <span>{{user.id}}</span>
-        <span>{{user.name}}</span>
-        <span>{{user.email}}</span>
-
-    </ul>
-
-
-
+</div>
 
 
 

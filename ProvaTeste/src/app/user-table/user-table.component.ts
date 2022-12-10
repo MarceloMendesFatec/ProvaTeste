@@ -18,7 +18,7 @@ export class UserTableComponent implements OnInit {
   //variavel para armazenar a interface
 
   ngOnInit(): void {
-    this.showUsers()
+    
     // inicializar o metodo no componente
   }
 
