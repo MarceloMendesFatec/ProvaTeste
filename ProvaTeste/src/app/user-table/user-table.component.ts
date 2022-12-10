@@ -14,7 +14,8 @@ export class UserTableComponent implements OnInit {
   constructor(private userService: UserService) { }
   //inicializar o servico no construtor
 
-  user?:userInterface[]
+  user?:userInterface[] | any;
+
   //variavel para armazenar a interface
   toDisplay = false;
   //variavel para abrir e fechar o card

@@ -9,17 +9,17 @@
 
     <div class="card"  *ngIf="toDisplay">
 
-        <ul *ngFor="let user of user ; count as i">
+        <ul *ngFor="let User of user">
 
             <div class="cardInside">
-                <p><b>ID:</b> {{user.id}}</p>
-                <p><b>Name:</b> {{user.name}} </p>
-                <p><b>Email:</b> {{user.email}} </p>
-                <p><b>User Name:</b> {{user.company.name}}</p>
+                <p><b>ID:</b> {{User.id}}</p>
+                <p><b>Name:</b> {{User.name}} </p>
+                <p><b>Email:</b> {{User.email}} </p>
+                <p><b>User Name:</b> {{User.company.name}}</p>
             </div>
 
         </ul>
-        <span>Total de Usuarios: </span>
+        <span>Total de Usuarios: {{user.length}} </span>
    </div>
 
 </div>
