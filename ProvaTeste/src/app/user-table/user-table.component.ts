@@ -16,15 +16,22 @@ export class UserTableComponent implements OnInit {
 
   user?:userInterface[]
   //variavel para armazenar a interface
+  toDisplay = false;
+  //variavel para abrir e fechar o card
 
   ngOnInit(): void {
-    
+
     // inicializar o metodo no componente
   }
 
 
   showUsers(){
+    this.toDisplay = !this.toDisplay;
     this.userService.getUser().subscribe(user => this.user = user)
     //metodo para mostrar os usuarios
+  }
+
+  hideUsers(){
+
   }
 }

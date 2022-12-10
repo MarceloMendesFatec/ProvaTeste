@@ -1,22 +1,25 @@
-<div class="nav"> Prova Teste </div>
+<div class="nav" > Prova Teste </div>
 
 
 <div class="container">
-    <button (click)="showUsers()">
-        Show Users
-    </button>
 
-   <div class="card">
+    <button (click)="showUsers()"> Show User </button>
+
+
+
+    <div class="card"  *ngIf="toDisplay">
+
         <ul *ngFor="let user of user">
+            <div class="cardInside">
+                <p><b>ID:</b> {{user.id}}</p>
+                <p><b>Name:</b> {{user.name}} </p>
+                <p><b>Email:</b> {{user.email}} </p>
+                <p><b>User Name:</b> {{user.company.name}}</p>
 
-            <span>{{user.id}} </span>
-            <span>{{user.name}} </span>
-            <span>{{user.email}} </span>
-            <span>{{user.company.name}} </span>
+            </div>
 
-         </ul>
+        </ul>
    </div>
-
 
 </div>
 

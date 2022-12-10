@@ -15,7 +15,7 @@
     flex-direction: column;
     background-color: #77898F;
     height: 600px;
-    width: 60%;
+    width: 70%;
     margin: auto  ;
     margin-top: 2rem;
     align-items: center;
@@ -23,13 +23,26 @@
     border-radius: 0.5rem;
 }
 
+
+.cardInside{
+    background-color: #D9D6D0;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+}
 .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    margin-top: 1rem;
     width: 90%;
-    border-radius: 0.5rem;
-    margin-top: 4rem;
+}
+
+
+ul{
+    padding: 0;
+
 }
 
 button{
@@ -40,6 +53,7 @@ button{
     color: #ffffff;
     font-weight: 500;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 button:hover{
@@ -48,4 +62,7 @@ button:hover{
 }
 
 
+p{
+    margin-left: 1rem;
 
+}
